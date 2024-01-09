@@ -1,7 +1,5 @@
 package Task8;
 
-import java.util.Iterator;
-
 public class ControlStatement {
 	
 	
