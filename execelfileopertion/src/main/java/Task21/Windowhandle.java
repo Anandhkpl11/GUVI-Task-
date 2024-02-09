@@ -1,6 +1,8 @@
 package Task21;
 
 import java.time.Duration;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Set;
 
 import org.openqa.selenium.By;
@@ -27,9 +29,13 @@ public class Windowhandle {
     	
     	Set<String> windowHandles = driver.getWindowHandles();
     	
-    	for (String newwindow : windowHandles) {
-			driver.switchTo().window(newwindow);
-		}
+    	//for (String newwindow : windowHandles) {
+		//	driver.switchTo().window(newwindow);
+		//}
+    	
+    	List<String> l=new ArrayList<String>(windowHandles);
+    	driver.switchTo().window(l.get(1));
+    			
     	
     	WebElement newwindowverify = driver.findElement(By.xpath("/html/body/div/h3"));
     	
