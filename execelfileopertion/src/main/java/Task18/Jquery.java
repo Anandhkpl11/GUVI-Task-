@@ -26,7 +26,9 @@ public class Jquery {
     	
     	Actions act=new Actions(driver);
     
-    	act.dragAndDrop(first, second).build().perform();    	
+    	act.dragAndDrop(first, second).build().perform();   
+    	
+    	
     	
     	
 	}
